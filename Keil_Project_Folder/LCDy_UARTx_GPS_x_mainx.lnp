@@ -1,0 +1,11 @@
+--cpu Cortex-M4.fp
+".\startup_tm4c123.o"
+".\main.o"
+".\lcd.o"
+".\gpio.o"
+".\uart.o"
+".\gps.o"
+".\gps_coords.o"
+--library_type=microlib --ro-base 0x00000000 --entry 0x00000000 --rw-base 0x20000000 --entry Reset_Handler --first __Vectors --strict --summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\LCDy_UARTx_GPS_x_mainx.map" -o .\LCDy_UARTx_GPS_x_mainx.axf
